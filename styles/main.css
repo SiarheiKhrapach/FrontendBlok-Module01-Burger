@@ -7,7 +7,10 @@
     --dark: #443737;
     --light: #FFFFFF;
     --light-rgb: 255, 255, 255;
-    
+    --line: #dedede;
+    --dark-rgba: 68, 55, 55, 0.5;
+
+    --tr: 0.2s;
 }
 
 body {
@@ -29,7 +32,7 @@ a {
 /*Header*/
 
 .header {
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid var(--line);
 }
 
 .header-wrapper {
@@ -232,6 +235,7 @@ a {
         background-color: var(--accent-ligt);
         border: none;
         border-radius: 5px;
+        transition: var(--tr);
     }
 
     .banner-btn:hover {
@@ -259,11 +263,17 @@ a {
         gap: 50px 20px;
     }
 
+    .menu-item {
+        font-family: var(--nunito-sans);
+        text-align: center;
+    }
+
     .menu-thumb {
         width: 100%;
         height: 430px;
         position: relative;
         overflow: hidden;
+        margin-bottom: 20px;
     }
 
     .menu-thumb img {
@@ -273,4 +283,144 @@ a {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .menu-title {
+        color: var(--dark);
+        font-family: var(--nunito-sans);
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 127%;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .menu-select {
+        color: var(--dark);
+        font-size: 15px;
+        appearance: none;
+        flex-basis: 279px;
+        background-image: url(/images/arrow.png);
+        background-size: 14px 10px;
+        background-repeat: no-repeat;
+        background-position: 89% center;
+        border: 1px solid var(--line);
+        padding: 13px 30px;
+        border-radius: 22px;
+    }
+
+    .menu-name {
+        color: var(--dark);
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 126%;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-price {
+        color: rgba(68, 55, 55, 0.5);
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 auto;
+        font-size: 14px;
+        font-family: var(--nunito-sans);
+        font-weight: 700;
+        padding: 11px 32px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #1e2f40;
+        background-color: var(--accent-ligt);
+        border: none;
+        border-radius: 5px;
+        /*background-image: url(/images/cart-mini.svg);*/
+    }
+
+    /*Foofter*/
+
+    .footer {
+        background-color: #1E2F40;
+        padding-top: 110px;
+        padding-bottom: 120px;
+        margin-top: 140px;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        background-image: url(/images/Logo_light.svg);
+        display: block;
+        width: 63px;
+        height: 56px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .footer-title {
+        color: var(--light);
+        font-family: var(--nunito-sans);
+        font-size: 20px;
+        font-family: 800;
+        line-height: 190%;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 13px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+    .footer-link {
+        color: rgba(var(--light-rgb), .9);
+        font-size: 15px;
+        line-height: 160%;
+    }
+
+    .footer-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+
+    }
+
+    .footer-list-item {
+        color: var(--light);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 160%;
+    }
+
+    .footer-list-item span {
+        display: block;
+        color: rgba(var(--light-rgb), .9);
+        font-weight: 400;
+    }
+
+    .footer-list-item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    .footer-tel {
+        display: block;
+        color: var(--accent-ligt);
+        font-family: var(--nunito-sans);
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-top: 12px;
     }
