@@ -113,6 +113,36 @@ a {
     bottom: 0;
 }
 
+.button-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1e2f40;
+    background-color: var(--accent-ligt);
+    border: none;
+    border-radius: 5px;
+    transition: var(--tr);
+}
+
+.button-up:hover {
+    background-color: var(--accent-dark);
+}
+
+.button-up.hiden {
+    opacity: 0;
+}
+
+.button-up.visible {
+    opacity: 1;
+}
+
 /*Hero*/
 
 .hero {
@@ -230,10 +260,13 @@ a {
     }
 
     .banner-btn {
+        display: block;
+        max-width: 170px;
+        text-align: center;
         font-size: 14px;
         font-family: var(--nunito-sans);
         font-weight: 700;
-        padding: 22px 25px;
+        padding: 22px 0%;
         text-transform: uppercase;
         text-decoration: none;
         color: #1e2f40;
@@ -518,13 +551,13 @@ a {
     }
 
     .contact-additionally > li:nth-child(1):before {
-        background-image: url(../images/contact/01.svg);
+        background-image: url(../images/01.svg);
     }
     .contact-additionally > li:nth-child(2):before {
-        background-image: url(../images/contact/02.svg);
+        background-image: url(../images/02.svg);
     }
     .contact-additionally > li:nth-child(3):before {
-        background-image: url(../images/contact/03.svg);
+        background-image: url(../images/03.svg);
     }
 
     .contact-info,
