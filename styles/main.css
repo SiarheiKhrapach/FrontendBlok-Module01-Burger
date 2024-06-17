@@ -13,6 +13,11 @@
     --tr: 0.2s;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: var(--open-sans);
 }
