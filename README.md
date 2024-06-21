@@ -3,7 +3,6 @@
 
 **Ссылки по проекту**
 - [Макет Фигма](https://www.figma.com/design/vcjwapDaZnUrF95yykrlpu/Burgers-Menu?node-id=0-1&t=sBbXcf28s2dCgG48-1)
-
 - [Демо](https://siarheikhrapach.github.io/FrontendBlok-Module01-Burger)
 
 **Используемые технологии**
