@@ -732,4 +732,106 @@ a {
         top: 20px;
         right: 20px;
     }
+    .hero {
+        padding-top: 57px;
+        padding-bottom: 55px;
+    }
+    .breadcrumbs {
+        font-size: 14px;
+    }
+    .hero-title {
+        font-size: 38px;
+        margin-top: 28px;
+        margin-bottom: 13px;
+    }
+    .hero-description {
+        font-size: 12px;
+        line-height: 166%;
+    }
+    .banner {
+        margin-top: 33px;
+    }
+    .banner-wrapper {
+        padding: 36px 15px 30px 15px;
+    }
+    .banner-title {
+        margin-bottom: 9px;
+    }
+    .banner-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+        max-width: 220px;
+    }
+    .banner-btn {
+        max-width: 198px ;
+    }
+    .menu-header {
+        margin-top: 58px;
+        margin-bottom: 30px;
+    }
+    .menu-title {
+        font-size: 27px;
+    }
+    .menu-select {
+        font-size: 12px;
+        flex-basis: 136px;
+        width: 136px;
+        background-position: 93% center;
+        padding: 13px 15px;
+    }
+    .menu-box{
+        gap: 24px 20px;
+    }
+    .menu-thumb {
+        margin-bottom: 10px;
+        height: 50vw;
+    }
+    .menu-item._additionally .menu-thumb {
+        height: 30vw;
+    }
+    .menu-name {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    .menu-price {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .menu-btn {
+        padding: 11px 22px;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 35px;
+        position: relative;
+    }
+    .footer-logo {
+        margin-bottom: 9px;
+    }
+    .footer-tel_mobile {
+        position: absolute;
+        top: -13px;
+        right: 0;
+    }
+    .footer-tel._mobile + .footer-tel._mobile {
+        top: 24px;
+    }
+    .footer-title {
+        font-size: 18px;
+    }
+    .footer-nav {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 450px) {
+    .menu-item._additionally .menu-thumb {
+        flex-basis: calc(100% - 130px - 20px);
+        height: 38vw;
+        }
+    /*.menu-item._additionally.menu-info{ 
+        
+    }*/
 }
