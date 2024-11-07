@@ -78,7 +78,7 @@ a {
     font-weight: 600;
 }
 
-.nav-link::after {
+.nav-link::before {
     content: '';
     display: block;
     width: 100%;
